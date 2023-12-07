@@ -1660,11 +1660,8 @@ MonoBehaviour:
   timer: 2
   obstacles:
   - {fileID: 227888555553676662, guid: 70a454ee760003f41b918b08266f47ca, type: 3}
-  - {fileID: 0}
   - {fileID: 227888555553676662, guid: 70a454ee760003f41b918b08266f47ca, type: 3}
-  - {fileID: 0}
   - {fileID: 227888555553676662, guid: 70a454ee760003f41b918b08266f47ca, type: 3}
-  - {fileID: 0}
   - {fileID: 227888555553676662, guid: 70a454ee760003f41b918b08266f47ca, type: 3}
 --- !u!1 &1162296243
 GameObject:
