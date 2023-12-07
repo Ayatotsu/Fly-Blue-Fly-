@@ -22,10 +22,11 @@ public class GameOverTrigger : MonoBehaviour
     public AudioSource audioHit;
     public GameObject audioChompObject;
     public AudioSource audioChomp;
+    
 
     [Header("Obstacle Type")]
     public bool isEnemy; //this is always true and it is an obstacle attached to enemies
-
+    
 
 
     void Start()
@@ -42,6 +43,7 @@ public class GameOverTrigger : MonoBehaviour
 
         audioHit = GameObject.Find("HitSound").GetComponent<AudioSource>();
         audioChomp = GameObject.Find("ChompSound").GetComponent<AudioSource>();
+        
     }
 
     private void OnCollisionEnter2D(Collision2D actor)
@@ -50,7 +52,6 @@ public class GameOverTrigger : MonoBehaviour
         gameOverPanel.gameObject.SetActive(true);
         mc.gameObject.SetActive(false);
         spawner.gameObject.SetActive(false);
-
 
         if (isEnemy)
         {
