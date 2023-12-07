@@ -18,11 +18,11 @@ public class Controller : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) || Input.GetKeyDown("space"))
         {
             rb.velocity = Vector2.up * velocity;
         }
-        if (Input.GetMouseButtonDown(0) && Input.GetKeyDown("space"))
+        if (Input.GetMouseButtonDown(0) || Input.GetKeyDown("space"))
         {
             audioFlap.Play();
         }
