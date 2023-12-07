@@ -8,7 +8,7 @@ public class SceneNavigation : MonoBehaviour
     public GameManager gameManager;
 
     [Header("Game Object Reference")]
-    public GameObject MC;
+    public GameObject mc;
     public GameObject spawner;
 
     [Header("Panel Reference")]
@@ -20,12 +20,12 @@ public class SceneNavigation : MonoBehaviour
     {
         currentPanel.gameObject.SetActive(false);
         nextPanel.gameObject.SetActive(true);
-        MC.gameObject.SetActive(true);
+        mc.gameObject.SetActive(true);
         spawner.gameObject.SetActive(true);
 
         gameManager.totalScore = 0;
 
-        MC.transform.position = new Vector3(0, 0, 0);
+        mc.transform.position = new Vector3(0, 0, 0);
     }
 
     public void BtnShowStory()

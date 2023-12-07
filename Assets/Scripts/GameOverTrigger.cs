@@ -14,7 +14,7 @@ public class GameOverTrigger : MonoBehaviour
 
     [Header("GameElements")]
     public GameObject gameElements;
-    public GameObject MC;
+    public GameObject mc;
     public GameObject spawner;
 
     [Header("AudioElements")]
@@ -37,7 +37,7 @@ public class GameOverTrigger : MonoBehaviour
         gameOverPanel = objCanvas.transform.Find("PanelGameOver").gameObject;
 
         gameElements = GameObject.Find("GameElements").gameObject;
-        MC = gameElements.transform.Find("MainCharacter").gameObject;
+        mc = gameElements.transform.Find("MainCharacter").gameObject;
         spawner = gameElements.transform.Find("Spawner").gameObject;
 
         audioHit = GameObject.Find("HitSound").GetComponent<AudioSource>();
@@ -48,7 +48,7 @@ public class GameOverTrigger : MonoBehaviour
     {
         inGamePanel.gameObject.SetActive(false);
         gameOverPanel.gameObject.SetActive(true);
-        MC.gameObject.SetActive(false);
+        mc.gameObject.SetActive(false);
         spawner.gameObject.SetActive(false);
 
 
