@@ -9,7 +9,7 @@ public class Score : MonoBehaviour
     public GameManager gameManager;
 
     [Header("AudioElements")]
-    public GameObject autioScoreObject;
+    public GameObject audioScoreObject;
     public AudioSource audioScore;
     
     // Start is called before the first frame update
