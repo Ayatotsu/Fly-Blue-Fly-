@@ -22,7 +22,7 @@ public class Controller : MonoBehaviour
         {
             rb.velocity = Vector2.up * velocity;
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && Input.GetKeyDown("space"))
         {
             audioFlap.Play();
         }
