@@ -1735,6 +1735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalScore: 0
+  lastScore: 0
   highScore: 0
   txtScore: {fileID: 274205426}
   txtLastScore: {fileID: 1655725573}
