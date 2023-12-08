@@ -61,7 +61,11 @@ public class GameOverTrigger : MonoBehaviour
         {
             audioHit.Play();
         }
-
+        if (gameManager.totalScore <= gameManager.highScore)
+        {
+            PlayerPrefs.SetInt("p_lastScore", gameManager.totalScore);
+            PlayerPrefs.Save();
+        }
         if (gameManager.totalScore > gameManager.highScore)
         {
             PlayerPrefs.SetInt("p_highScore", gameManager.totalScore);
